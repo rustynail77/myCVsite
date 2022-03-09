@@ -69,6 +69,7 @@ section:hover {
 #matrix-button {
   color: rgb(8, 192, 8);
   width: 180px;
+  visibility: hidden;
 }
 
 .textLine {
