@@ -40,7 +40,7 @@ a {
 }
 
 body {
-  /* background-image: url("/assets/https___bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com_public_images_b6541f31-12b2-4c19-b8ed-a19f2b3a56f9_800x591.gif"); */
+  /* background-image: url("./assets/https___bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com_public_images_b6541f31-12b2-4c19-b8ed-a19f2b3a56f9_800x591.gif"); */
   background-color: #000;
 }
 
@@ -121,7 +121,7 @@ section:hover {
 }
 
 .matrix {
-  background-image: url("/assets/8dfb7036cdf29e13b850615e639e24d8.gif");
+  background-image: url("./assets/8dfb7036cdf29e13b850615e639e24d8.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -267,7 +267,7 @@ section:hover {
   }
 
   .matrix {
-    background-image: url("/assets/8dfb7036cdf29e13b850615e639e24d8.gif");
+    background-image: url("./assets/8dfb7036cdf29e13b850615e639e24d8.gif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
