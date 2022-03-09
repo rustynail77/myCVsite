@@ -9,6 +9,7 @@ function matrixFunc(currClass){
 }
 
 function clearScreen(showThis) {
+    document.getElementById("matrix-button").style.visibility = (showThis=="experience") ? "visible":"hidden";
     if (document.querySelector("#machineText")) document.querySelector("#cursorer").remove();
     if (document.querySelector("#machineText")) document.querySelector("#machineText").remove();
     document.querySelector(".textLine").style.paddingTop = "45px";
