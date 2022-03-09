@@ -1,0 +1,280 @@
+* {
+  /* font-family: Calibri, sans-serif; */
+  font-family: "Syne Mono", monospace;
+  transition: all 1s;
+}
+
+ul {
+  list-style-position: outside;
+  padding-left: 5%;
+}
+
+h4,
+h3,
+h2,
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-weight: 100;
+  color: white;
+  font-size: 0.9em;
+  align-self: center;
+}
+
+h4 {
+  color: rgb(8, 192, 8);
+}
+
+h1 {
+  color: rgb(8, 192, 8);
+  font-size: 1.3em;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-self: center;
+}
+
+a {
+  color: white;
+}
+
+body {
+  /* background-image: url("/assets/https___bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com_public_images_b6541f31-12b2-4c19-b8ed-a19f2b3a56f9_800x591.gif"); */
+  background-color: #000;
+}
+
+section:hover {
+  transform: scale(1.05);
+}
+
+.navbar {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 0 10px 0 10px;
+  display: inline-flex;
+  justify-content: center;
+  margin-top: -10px;
+  border-bottom: rgb(8, 192, 8) dotted 1px;
+}
+
+.nav-but {
+  height: 30px;
+  border-radius: 10px;
+  align-self: center;
+  margin-right: 5px;
+}
+
+#matrix-button {
+  color: rgb(8, 192, 8);
+  width: 180px;
+}
+
+.textLine {
+  display: inline-flex;
+  padding-top: 88px;
+  color: rgb(8, 192, 8);
+}
+
+.nav-but:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+#machineText {
+}
+
+.left-column {
+  color: white;
+  flex: 25%;
+  border-right: rgb(119, 205, 255), solid 12px;
+  background-color: black;
+}
+
+.right-column {
+  color: #fff;
+  flex: 75%;
+  border-left: rgb(8, 192, 8) solid 1px;
+  background-color: black;
+}
+
+.links-text {
+  margin-bottom: 50px;
+}
+
+.icons {
+  width: 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.grey-bg {
+  background-color: rgb(180, 180, 180, 0.3);
+  padding: 1%;
+}
+
+.lighter-grey-bg {
+  background-color: rgb(190, 190, 190, 0.5);
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.matrix {
+  background-image: url("/assets/8dfb7036cdf29e13b850615e639e24d8.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.matrix:hover {
+  background-image: none;
+}
+
+.matrix-stop {
+  background-image: none;
+}
+
+.main-container {
+  display: none;
+}
+
+.tooltip {
+  position: relative;
+  border-bottom: 1px dashed grey;
+}
+
+.tooltip:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 100%;
+  transform: translateY(-150%);
+  left: 40%;
+  margin-left: 15px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgb(8, 192, 8);
+  color: #fff;
+  text-align: center;
+  display: none;
+}
+
+.tooltip:hover:before,
+.tooltip:hover:after {
+  display: block;
+}
+
+.tooltip:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  top: -1%;
+  transform: translateY(-50%);
+  border: 10px solid #000;
+  border-color: rgb(8, 192, 8) transparent transparent transparent;
+  display: none;
+}
+
+.left-column-texts {
+  padding: 5%;
+}
+
+#cursorer {
+  animation: blinking 0.8s step-end infinite;
+}
+
+@keyframes blinking {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .tooltip:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-150%);
+    left: 30%;
+    margin-left: 15px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(8, 192, 8);
+    color: #fff;
+    text-align: center;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 629px) {
+  /* for widths less than or equal to 629 pixels */
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  #machineText {
+    /* margin-top: 30px; */
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  div,
+  li,
+  span {
+    font-size: 20px;
+  }
+
+  .left-column {
+    float: none;
+    flex: 100%;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .left-column-texts {
+    padding: 5px;
+  }
+
+  .right-column {
+    float: none;
+    flex: 100%;
+    width: 100%;
+    border-left: 0;
+  }
+
+  #education {
+    margin-top: 60px;
+  }
+
+  .icons {
+    visibility: hidden;
+  }
+
+  .links-text {
+    margin-left: 2%;
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .h3-sub {
+    padding-left: 1%;
+  }
+
+  .matrix {
+    background-image: url("/assets/8dfb7036cdf29e13b850615e639e24d8.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .tooltip:after,
+  .tooltip:before {
+    display: none;
+  }
+}

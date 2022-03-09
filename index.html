@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Liron's CV site</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Syne+Mono&display=swap" rel="stylesheet">
+        <script src="script.js" async defer></script>
+    </head>
+    <body>
+        <nav class="navbar" id="navbar">
+            <h2>Liron Schnaider Levi</h2>
+            <h1>My CV site</h1>
+            <button id="general-but" class="nav-but">General</button>
+            <button id="experience-but" class="nav-but">Experience</button>
+            <button id="education-but" class="nav-but">Ed. & Skill</button>
+            <button id="matrix-button" class="nav-but" type="button" 
+                onclick="matrixFunc(document.getElementById('matrix').className)">
+                Take the Red Pill
+            </button>
+        </nav>
+        <div class="textLine">
+            <span id="machineText"></span>
+            <span id="cursorer">&#9646;</span>
+        </div>
+        
+        <container id="experience" class="main-container">     
+            <div id="left-links" class="left-column">
+                <div class="links-zone left-column-texts">
+                    <h3>Some Links</h3>
+                    <div>
+                        <img src="/assets/homep.svg" class="icons">
+                        <a href="http://www.rustynail77.com/budapest-apartments" target="_blank" class="links-text">My JS sample site</a>
+                    </div>
+                    <div>
+                        <img src="/assets/github.svg.png" class="icons">
+                        <a href="https://github.com/rustynail77/" target="_blank" class="links-text">My Github Repository</a>
+                    </div>
+                    <div>
+                        <img src="/assets/linkedin.png" class="icons">
+                        <a href="https://www.linkedin.com/in/liron-schnaider-levi-60b325194/" target="_blank" class="links-text">My LinkedIn Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <h3>Experience</h3>
+                <section class="matrix" id="matrix">
+                    <h4>2019-Present: Webmaster / Web Developer</h4>
+                    <ul>
+                        <li><b>Freelancer –</b> Recently took on a project for a customer: mapping needs, redesigning website and replacing existing paid messaging service with an internal self-built PHP/SQL service for batch messaging and automatic daily mails to online fitness users.</li>
+                        <li><b>MantaWeb –</b> Using PHP, CSS, HTML, JS, WordPress, WP Elementor. Working directly with clients and QA – debugging and design fine tuning.</li>
+                    </ul>
+                </section>
+                <section class="lighter-grey-bg">
+                    <h4>2017-Present: Entrepreneur and partner to business enterprises</h4>
+                    <ul>
+                        <li><b>Real estate & hosting: </b>foreign market research; networking; real estate purchase, upgrade and operation for long term tenants and for short-term guests.</li>
+                        <li><b>Tech ventures: </b>took part in a brain-storming team devising of a micro-screens-based jewelry line; a life-saving beach pole concept; open-code editing.</li>                        
+                    </ul>
+                </section>
+                <section>
+                    <h4>2009-2016: Manager, Team lead and Project Manager</h4>
+                    <ul>
+                        <li><b>Team Lead in governmental unit –</b>
+                                 managing a division of 4 teams and 20+ members.</li>
+                        <li><b>Database Project Manager –</b> Created the unit's MS-Access based database, 
+                                using MS-SQL and VB code: mapping needs; 
+                                db specification (Primary, Upgrade and organizational versions); 
+                                data preparation, transfer and extraction; 
+                                designing per-role UI; building multiple modules for various unit departments; 
+                                user training and support; system maintenance; collecting feedback and debugging.
+                        <br>
+                            Received the 2012 <b>PIBA director's employee of the year award</b>
+                             for creating the system.
+                        </li>
+                        <li><b>DocEx lab Project Manager -</b> 
+                                Planning, researching and managing a budget of $150,000 for a project of establishing a questioned documents examination laboratory;
+                                Publishing intel reports and creating work procedures.</li>                          
+                    </ul>
+                </section>
+            </div>
+        </container>
+            
+        <container id="education" class="main-container">
+            <div class="left-column">
+                <h3>Education</h3>
+                <ul>
+                    <li>2020-2021 - <strong>Online courses: </strong>HTML, CSS, JS, PHP, Python, Agile, C++;</li>
+                    <li>2008 - <strong>IT & Cyber Security Pro: </strong>(300 hrs) @ Technion ext. unit.;</li>
+                    <li>2004 - <strong>B.Ed </strong>@ Beit Berl College. Major: Art Education;</li>
+                </ul>
+            </div>
+        
+            <div class="right-column">
+                <div class="lighter-grey-bg">
+                    <h3>Software Development Skills</h3>
+                    <ul>
+                        <li><strong>Experienced in: </strong>Python, HTML, CSS, JS, PHP, SQL;</li>
+                        <li><strong>Familiar with: </strong>C++, C#, Node.JS, Agile, Scrum, Flutter, REACT.JS, VB.NET;</li>
+                    </ul>
+                </div>
+                <div class="grey-bg">
+                    <h3>Other Skills</h3>
+                    <ul>
+                        <li><strong>Project Management:</strong>
+                            <ul>
+                                <li>Server&Client SQL Database establishment (planning, maintaining; data prep, migration, extraction and analysis);</li>
+                                <li>A-Z Document Examination Lab establishment;</li>
+                            </ul>
+                        <li><strong>Other: </strong>Adobe Premiere Pro video editing; Full MS-Office proficiency; A-Z WordPress website builder;</li>
+                    </ul>
+                </div>
+            </div>    
+        </container>
+            <container id="general-me" class="main-container">
+                <div id="left-links" class="left-column">
+                    <div class="links-zone left-column-texts">
+                        <h3>Some Links</h3>
+                        <div>
+                            <img src="/assets/phone.svg" class="icons">
+                            <a href="tel:+972506224203" class="links-text">+972-50-622-4203</a>
+                        </div>
+                        <div>
+                            <img src="/assets/at.png" class="icons">
+                            <a href="mailto:lironrsd@gmail.com" class="links-text">lironrsd@gmail.com</a>
+                        </div>
+                        <div>
+                            <img src="/assets/linkedin.png" class="icons">
+                            <a href="https://www.linkedin.com/in/liron-schnaider-levi-60b325194/" target="_blank" class="links-text">My LinkedIn Profile</a>
+                        </div>
+                        <div>
+                            <img src="/assets/location.jpg" class="icons">
+                            <a href="https://goo.gl/maps/RoEcqDPq1VfscKed6" target="_blank" class="links-text">I live in Kfar Vradim, IL</a></div>
+                    </div>
+                </div>
+                <div class = "right-column">
+                    <div>
+                        <h3>Seeking new creative challenges</h3>
+                        <ul class="right-column-texts">
+                            <li><strong>I've learnt many skills independently </strong>when a need arose: sw dev skills like <b>PHP, JS, HTML, Python, VB.NET and SQL</b>;</li>
+                            <li>acquired other useful skills such as <b>handling bureaucracy in foreign countries, negotiating and internal design</b>.</li>
+                        </ul>
+                
+                
+                        <h3>Other things you should know about me</h3>
+                        <ul>
+                            <li><span data-text="Ask me about this fascinating discovery!" class="tooltip">
+                                <strong>2017 - </strong>
+                                Presented own findings in international document examination conventions in Riga (High Security Printing: Europe) and Baku (Secure:ID); 
+                            </span>
+                                <a href="/assets/IDN MAY 2017 article.pdf" target="_blank">
+                                    Want to read about it?
+                                </a>
+                            </li>
+                            <li><strong>2016 - </strong>Participated in US State Department International Leadership program: Combating Trafficking in Persons;</li>
+                        </ul>
+                    </div>
+                </div>
+            </container>                
+                
+        </container>
+
+    </body>
+</html>
